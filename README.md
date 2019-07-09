@@ -16,7 +16,7 @@ Simply clone, move to the cloned repo. Then make screenshot of text you want to 
 
 ## Needs
 
-You must have tesseract OCR package installed. Use this ![https://github.com/tesseract-ocr/tesseract/wiki/Downloads](link) to download. Use installer please.
+You must have tesseract OCR package installed. Use this [https://github.com/tesseract-ocr/tesseract/wiki/Downloads](link) to download. Use installer please.
 
 ## About
 
