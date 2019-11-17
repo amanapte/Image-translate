@@ -1,6 +1,5 @@
 # Image text translator - see more in readme.
-# Made by @TomasRoj in  209 under MIT license. This comment must be included in any future distributions.
-
+# Made by @TomasRoj in 2019 under MIT license.
 # Imports all required components
 from PIL import Image
 import pytesseract
