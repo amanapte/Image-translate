@@ -21,7 +21,7 @@ for images in glob.glob("*.jpg"):
     # Opens image
     im = Image.open(images)
 
-    # Gets the image and translates it to Czeck. You can specify own lang if you want.
+    # Gets the image and translates it to Czech. You can specify own lang if you want.
     text = pytesseract.image_to_string(im, lang = 'eng')
     text_translated = translator.translate(text, dest="cs")
 
