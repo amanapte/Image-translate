@@ -11,7 +11,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("src", help="Source language", type=str)
 parser.add_argument("dst", help="Destination language", type=str)
-parser.parse_args()
+args = parser.parse_args()
 
 
 
@@ -24,15 +24,15 @@ translator = Translator()
 
 # Path to the images folder. Edit this to yours.
 os.chdir("./test_images")
-
+print("******************")
 # Goes thru every image:
 for images in glob.glob("*.jpg"):
     # Opens image
     im = Image.open(images)
 
     # Gets the image and translates it to Czech. You can specify own lang if you want.
-    text = pytesseract.image_to_string(im, lang = src)
-    text_translated = translator.translate(text, dest= dst)
+    text = pytesseract.image_to_string(im, lang=args.src)
+    text_translated = translator.translate(text, dest=args.dst)
 
     # Finally, print the translated image's text and print it.
     print(text_translated)
